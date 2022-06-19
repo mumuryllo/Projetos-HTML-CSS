@@ -1,0 +1,101 @@
+/*Seria o passo a passo da animação*/
+/* toda animação volta ao seu estado inicial quando termina*/
+@keyframes anima{
+    from {background-color: cornflowerblue;}
+    to {
+        background-color: darkblue;
+    }
+}
+@keyframes anima2{
+  0% {}
+  30% {width: 100px;}
+  60% {background-color: darkslateblue;}
+  80% {left: 100px; background-color: darkcyan;}
+  100% {height: 100px;}
+}
+@keyframes anima3{
+    from { left: 0px}
+    to {
+        left: 200px;
+        background-color: crimson;
+        }
+}
+@keyframes anima4{
+    from { left: 0px}
+    to {
+        left: 500px;
+        background-color: pink;
+        }
+}
+@keyframes anima5{
+    0% {}
+    30% {width: 100px;}
+    60% {background-color: darkslateblue;}
+    80% {left: 100px; background-color: darkcyan;}
+    100% {height: 100px;}
+  }
+.anima-div{
+    width: 150px;
+    height: 150px;
+    background-color: cornflowerblue;
+    animation-name: anima;
+    animation-duration: 5s;
+}
+.anima-div2{
+    width: 200px;
+    height: 200px;
+    background-color: rebeccapurple;
+    animation-name: anima2;
+    animation-duration: 4s;
+    position: relative;
+}
+.anima-div3{
+    width: 100px;
+    height: 100px;
+    background-color: darkorange;
+    animation-name: anima3;
+    animation-duration: 4s;
+    position: relative;
+    /*atraso na animação*/
+    animation-delay: 2s;
+        /*quantas vezes que eu quero que a animação rode*/
+    animation-iteration-count: 5;
+}
+/*Timing das animações*/
+
+.box{
+    background-color: blue;
+    height: 50px;
+    width: 50px;
+    animation-name: anima4;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+#anima-div4{
+animation-timing-function: linear;
+}
+#anima-div5{
+    animation-timing-function: ease;
+
+}
+#anima-div6{
+    animation-timing-function: ease-in;
+
+}
+#anima-div7{
+    animation-timing-function: ease-out;
+
+}
+#anima-div8{
+    animation-timing-function: ease-in-out;
+
+}
+/*Shorthand -nome, duração,timing-function,delay,interation*/
+#anima-div9{
+    width: 250px;
+    height: 250px;
+    background-color: darkmagenta;
+    position: relative;
+    animation: anima5 4s ease-out 2s infinite;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/bf7e05c402.js"></script>
+    <title>WhatsApp web clone</title>
+</head>
+<body>
+    <div class="container">
+     <aside class="sidebar">
+      <div class="toolbar-container">
+        <img src="./img/avatar1.png" class="user-photo" >
+        <div class="auxicons-toolbar-container">
+         <i class="fas fa-spinner"></i>
+         <i class="fas fa-comment-alt"></i>
+         <i class="fas fa-elipsis-v"></i>
+        </div>
+      </div>
+      <div class="notification-container">
+      <i class=" fas fa-bell-slash"></i>
+      <p class="receive-notification">Receba notificações de novas mensagens</p>
+      <p class="activave-notification">Ativar notificações na área de trabalho
+        <i class="fas fa-angle-right"></i>
+      </p>
+      </div>
+      <div class="search-container">
+        <i id="contact-search" class="fas fa-search"></i>
+        <input type="text" name="search" id="search" placeholder="inicie uma nova conversa">
+      </div>
+      <div class="contacts-container">
+        <div class="contact-box">
+           <img src="./img/avatar2.png" class="user-photo">
+
+           <div class="user-info">
+           <p class="user-name">Valéria Santos</p>
+           <p class="user-messagepreview">Olá Muryllo tudo bem?</p>
+           </div>
+           <div class="message-info">
+                  <p class="message-time">17:00</p>
+                  <p class="message-pending">3</p>
+           </div>
+        </div>
+        <div class="contact-box active-chat">
+            <img src="./img/avatar3.png" class="user-photo">
+            
+            <div class="user-info">
+            <p class="user-name">Zup Innovattion</p>
+            <p class="user-messagepreview"> <i class="fas fa-check-double"></i> Olá  tudo bem? 
+                Estou interessado na vaga de Desenvolvedor Júnior na Zup Innovation</p>
+            </div>
+            <div class="message-info">
+                   <p class="message-time">18:00</p>
+            </div>
+         </div>
+      </div>
+     </aside>
+     <main class="chat-container">
+        <nav class="chat-navbar">
+            <div class="contactinfo-container">
+                <img class="user-photo" src="img/avatar2.png">
+                <p class="user-name">Valéria Santos</p>
+            </div>
+            <ul class="chattools-container">
+                <li><i class="fas fa-search"></i></li>
+                <li><i class="fas fa-paperclip"></i></li>
+                <li><i class="fas fa-ellipsis-v"></i></li>
+            </ul>
+        </nav>
+        <div class="messages-container">
+            <div class="bg-image"></div>
+            <div class="chat-messages">
+                <p class="guest-message">Olá Muryllo tudo bem?</p>
+                <p class="user-message">Oi, tudo bem?</p>
+            </div>
+        </div>
+        <div class="sendmessage-container">
+            <i class="far fa-grin"></i>
+            <input id="chatmessage" type="text" name="message" class="userinput" placeholder="Digite uma mensagem">
+            <i class="fas fa-microphone"></i>
+        </div>
+    </main>		
+
+    </div>
+</body>
+</html>

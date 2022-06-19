@@ -1,0 +1,31 @@
+/*box model*/
+.box{
+        /*Padding sentido anti-horário:cima,direita,baixo,esquerdo*/
+width: 200px;
+height: 200px;
+background-color: darkblue;
+padding: 30px 20px 5px 10px;
+border: 3px solid red;
+border-radius: 10px;
+margin: 100px;
+       /*display inline não aceita largura ou altura*/
+              /*display inline-block: uma div do lado do outro*/
+                            /*display inline-block: uma div em baixo do outro*/
+              display: inline-block;
+
+}
+body{
+    margin: 0;
+}
+.para{
+    color: white;
+    margin: 0;
+}
+
+    /*Positions*/
+  /*static, padrão do HTML*/
+    /*relative, flow e é alterada pelo top,bottom,lefth e right*/
+  /*fixed, o conteúdo fica fixo em qualquer lugar do html*/
+  /*absolute, posiciona em qualquer lugar e respeita a hierarquia*/
+  /*sticky, está no flow do html, porem ao passar o scroll fica com fixed sobresaindo as outras*/
+  
